@@ -31,19 +31,7 @@ function onLogin(response) {
   }
 }
 
-FB.getLoginStatus(function(response) {
-  // Check login status on load, and if the user is
-  // already logged in, go directly to the welcome message.
-  if (response.status == 'connected') {
-    onLogin(response);
-  } else {
-    // Otherwise, show Login dialog first.
-    FB.login(function(response) {
-      onLogin(response);
-    }, {scope: 'user_friends, email'});
-  }
-});
-<div id="fb-root"></div>
+Fdiv id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
@@ -51,4 +39,4 @@ FB.getLoginStatus(function(response) {
   js.src = "//connect.facebook.net/th_TH/sdk.js#xfbml=1&version=v2.3&appId=686173218139684";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+<div class="fb-like" data-href="https://www.facebook.com/girlnalak/docs/plugins/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
